@@ -109,9 +109,9 @@ diptych with soundscape). The contradiction lands hardest when the audience
 catches *themselves* doing it.
 
 1. **The Mirror (hook).** Before any explanation, the visitor plays. Candidates
-   appear one at a time with a compatibility percentile; accept or reject;
-   rejections are final; the pool reads "∞ nearby." Nearly everyone holds out.
-   *Then* the piece begins.
+   appear one at a time; accept or reject; rejections are final; the pool reads
+   "∞ nearby." Nearly everyone holds out. *Then* the piece begins.
+   (Full game design below — the visitor never sees a number during play.)
 
 2. **The Diptych.** Split screen: same 100 souls, same compatibility matrix, only
    perceived pool size differs. Agents are particles of light; pairing = two
@@ -136,6 +136,75 @@ catches *themselves* doing it.
 5. **The Mirror, again.** "You rejected 9 people averaging p82. Here is what
    happens, on average, to people who run your algorithm." The visitor's own
    stopping rule, quantified against the population.
+
+## The Mirror: game design
+
+A percentile on a card makes the visitor a gambler, not a dater. The fix is not
+to hide the numbers better — it is to invert where they live:
+
+> **The numbers exist, but you never date them.** Every candidate has a hidden
+> trait vector and scalar score (the simulation needs them), but what the
+> visitor sees is a *person generated from those traits* — a name, a face, and,
+> crucially, not a profile but a **vignette of the date itself**. The numbers
+> surface only in the reveal, when every gut choice gets re-scored. Seeing your
+> vibes quantified is itself part of the piece.
+
+Example vignette (three lines of lived moment, not stats):
+
+> He ordered for you without asking — confident, or presumptuous? He laughed at
+> his own joke before the punchline. But when you mentioned your mom, he put his
+> phone face-down and listened.
+
+### Mechanics that make it feel like dating
+
+1. **Incommensurable bundles, never a clear winner.** Candidates are generated
+   only on the Pareto frontier: each is strong on some axes, weak on others —
+   funny but flaky, gorgeous but boring, kind but no spark. The agony of real
+   dating is trading apples for oranges; a scalar deletes that agony, trait
+   tension restores it.
+2. **Every vignette contains one genuine flaw and one moment of real
+   connection.** Big-city maximizing runs on flaw-fixation — with infinite
+   options, any flaw is disqualifying. And rejecting someone only stings if you
+   felt something first. Both beats, every card.
+3. **Two phases, like reality.** A fast **swipe phase** (10–15 profiles, seconds
+   each; cards drift away if you hesitate — app phenomenology) funnels into a
+   slower, untimed **date phase** (5–7 vignettes). Whole game under five minutes.
+4. **The phantom next.** While the visitor reads a date vignette, match
+   notifications quietly arrive. After each rejection: *"2,341 more nearby."*
+   The infinite scroll must be felt as a physical pull mid-decision.
+5. **You get rejected too.** At least once, the visitor says yes and he doesn't:
+   *"He had a nice time. He didn't feel it."* One beat punctures the menu
+   illusion and makes the market two-sided.
+6. **Time is the price.** Every decision advances the clock — seasons change in
+   the backdrop, friends' couples appear in the periphery, *"You are 31 now."*
+   The cost of search is never money; it is years.
+7. **Commitment is a sequence, not a button.** Accepting means *another date*;
+   coupling takes three consecutive yeses, with date-2 and date-3 vignettes that
+   deepen (and reveal more flaws). This is where maximizers actually bail — when
+   novelty fades — and the game lets them do it.
+8. **The same man twice (the killer beat).** One candidate appears twice — same
+   vignette lightly reskinned, different name — once early, once late. The
+   reveal: *"You met Daniel twice. You said no at 27 and yes at 34. He was the
+   same person."* One moment that carries the entire thesis: same input,
+   different denominator.
+
+### The reveal, rebuilt around persons instead of percentiles
+
+- **Where are they now:** rejected candidates re-enter the simulation and pair
+  off — *"Daniel met someone four months later."* The visitor watches their own
+  pool drain.
+- **Stated vs. revealed preferences:** three intake questions before play ("what
+  matters most to you?") set this up. Then: *"You said kindness mattered most.
+  You rejected the two kindest men in your pool in under 8 seconds each."*
+- **Your revealed algorithm:** only now do numbers appear — *"You were running a
+  p93 stopping rule"* — mapped onto the population outcomes from the diptych.
+
+### Implementation
+
+Candidates are batch-generated and cached: trait vector → LLM writes the
+profile, three escalating date vignettes, the flaw, and the connection moment.
+Deterministic seeds keep the simulation reproducible. Live LLM generation is
+needed only for the personalized reveal text, if at all.
 
 ## Art direction
 
