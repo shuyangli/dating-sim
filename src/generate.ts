@@ -49,7 +49,12 @@ async function main() {
   console.log(`Sampled ${specs.length} Pareto-frontier candidates (seed ${seed})`);
   console.log(
     specs
-      .map((s) => `  ${s.id}: p${s.percentile}  flaw=${s.flawAxis}  connection=${s.connectionAxis}`)
+      .map(
+        (s) =>
+          `  ${s.id}: ${Object.entries(s.percentiles)
+            .map(([k, v]) => `${k}=p${v}`)
+            .join(" ")}  flaw=${s.flawAxis}  connection=${s.connectionAxis}`
+      )
       .join("\n")
   );
 
@@ -76,7 +81,9 @@ async function main() {
     const results = await Promise.all(batch.map((s) => generateOne(client, s)));
     for (const r of results) {
       cache[r.spec.seed] = r;
-      console.log(`  ✓ ${r.spec.id}: ${r.persona.name}, ${r.persona.age} (p${r.spec.percentile})`);
+      console.log(
+        `  ✓ ${r.spec.id}: ${r.persona.name}, ${r.persona.age} (uniform p${r.spec.percentiles.uniform})`
+      );
     }
     fs.writeFileSync(cachePath, JSON.stringify(cache, null, 2));
   }

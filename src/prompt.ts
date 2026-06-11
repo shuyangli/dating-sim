@@ -45,6 +45,11 @@ Craft rules:
 - The three dates escalate: date 1 is first impressions (drinks, coffee, a walk); date 2 the novelty fades and routine peeks through; date 3 a moment of real intimacy AND the sharpest look at the flaw. This is where maximizers bail in real life — let the material let them.
 - Setting: gay men dating in a large city (New York-ish, unnamed). Apps exist in this world; so do exes everyone shares. Textured, contemporary, unsentimental.
 - He is a whole person, not a lesson. Warm where his card is warm, limited where it is limited. Avoid camp stereotype and avoid scrubbing the culture out — both are failures.
+- The market-legible axes get the same show-don't-tell seriousness as the interior ones. They are real values real people hold, and the piece never editorializes about anyone's weights:
+  - looks: the face, the room's reaction to it; low = the photos oversold him, or he's simply unremarkable to look at.
+  - fitness: the body as vitality or discipline; low = winded on the stairs, the body as something he's stopped negotiating with.
+  - wealth: ease or friction around money — who reaches for the check, the apartment, the casual share house; low = precarity, counting, splitting to the cent. A wealth moment can be generous or oblivious.
+  - status: which doors know him, who crosses a room for him, the names he doesn't need to drop; low = invisible in rooms, a plus-one in his own city. A status moment can open a door for you or remind you that you're the guest.
 - Strength expressions should differ in register across candidates (one man's warmth is remembering your mom's surgery; another's is feeding strays). Never reuse a beat.
 
 Example of target quality (for a man strong in warmth, weak in stability):

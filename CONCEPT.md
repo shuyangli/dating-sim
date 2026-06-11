@@ -206,6 +206,36 @@ profile, three escalating date vignettes, the flaw, and the connection moment.
 Deterministic seeds keep the simulation reproducible. Live LLM generation is
 needed only for the personalized reveal text, if at all.
 
+### Whose p99? Beholder-relative scoring
+
+Two places the piece could smuggle in its authors' values, and the discipline
+that keeps it honest:
+
+1. **The trait space must not moralize by omission.** Real dating markets —
+   gay app culture especially — trade explicitly on body, money, and status.
+   The axes therefore include the market-legible attributes (looks, fitness,
+   wealth, status) alongside the interior ones (warmth, humor, ambition,
+   emotional availability, stability, curiosity, chemistry). If the deck never
+   contains a rich man or a beautiful one, the visitor never faces the
+   trade-offs they actually face, and the mirror can't catch them doing
+   flaw-math on values it refused to represent.
+
+2. **A percentile is a property of a scorer, not of a person.** There is no
+   fixed "objective" preference vector. Every score is computed against a
+   beholder's weights; the same deck scored by a romantic, an aesthete, and a
+   pragmatist produces three different p99s (in the prototype deck, one man is
+   p95 to the romantic and p2 to the pragmatist). The Mirror's intake sets the
+   visitor's own weights, and the reveal judges them only by those — "you said
+   X mattered most" carries weight precisely because *they* said it.
+
+Where the piece **is** allowed a position: the outcome model. First-date
+scores are fully beholder-relative — beauty and money are priced in at the
+door, at whatever value the visitor assigns them. The thesis claim is
+narrower than "value the right things": it is that **some traits compound
+with invested years and others don't.** The quality-growth term draws on the
+investment-relevant traits; the door price is whatever you say it is. The art
+argues about what grows, not about what you're allowed to want.
+
 ## Art direction
 
 - **Visual language:** no dating-app UI pastiche (Tinder-card parody is tired).

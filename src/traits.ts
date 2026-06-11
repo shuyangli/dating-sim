@@ -1,12 +1,17 @@
 import { Rng, mulberry32, range, int, shuffle } from "./rng.js";
 
-// The eight axes every candidate is sampled on. The visitor never sees these
+// The trait axes every candidate is sampled on. The visitor never sees these
 // words or numbers — they exist so the simulation can score what the vignettes
-// only evoke.
+// only evoke. The set deliberately includes the market-legible attributes
+// dating apps actually trade on (looks, fitness, wealth, status) alongside the
+// interior ones: the deck must not moralize by omission.
 export const TRAIT_AXES = [
   "warmth",
   "humor",
   "looks",
+  "fitness",
+  "wealth",
+  "status",
   "ambition",
   "emotional availability",
   "stability",
@@ -25,21 +30,25 @@ export interface CandidateSpec {
   weaknesses: TraitAxis[]; // 1-2 low axes — one becomes the visible flaw
   connectionAxis: TraitAxis;
   flawAxis: TraitAxis;
-  score: number; // hidden scalar vs the reference preference vector
-  percentile: number; // rank within a large simulated background pool
+  // A percentile is not a property of a person; it's a property of a scorer.
+  // Scores are computed per preference profile; the Mirror's intake will add
+  // the visitor's own profile, and the reveal judges them only by that one.
+  percentiles: Record<string, number>;
 }
 
-// Stated-preference weights for the reference visitor. The Mirror's intake
-// questions will personalize these later; for the prototype they're fixed.
-const PREFERENCE_WEIGHTS: TraitVector = {
-  warmth: 1.2,
-  humor: 1.0,
-  looks: 0.9,
-  ambition: 0.7,
-  "emotional availability": 1.3,
-  stability: 0.9,
-  curiosity: 0.8,
-  chemistry: 1.2,
+function weights(base: number, emphasis: Partial<TraitVector>): TraitVector {
+  const w = {} as TraitVector;
+  for (const axis of TRAIT_AXES) w[axis] = emphasis[axis] ?? base;
+  return w;
+}
+
+// Preset beholders. None of them is "correct" — that's the point. The same
+// deck scored by each produces different p99s.
+export const PREFERENCE_PROFILES: Record<string, TraitVector> = {
+  uniform: weights(1, {}),
+  romantic: weights(0.5, { chemistry: 2, "emotional availability": 2, warmth: 2 }),
+  aesthete: weights(0.5, { looks: 2, fitness: 2, status: 2 }),
+  pragmatist: weights(0.5, { wealth: 2, stability: 2, ambition: 2 }),
 };
 
 // Every candidate is strong somewhere and weak somewhere — Pareto-frontier
@@ -74,24 +83,29 @@ function dominates(a: TraitVector, b: TraitVector): boolean {
   return strictly;
 }
 
-export function score(traits: TraitVector): number {
+export function score(traits: TraitVector, prefs: TraitVector): number {
   let total = 0;
   let weightSum = 0;
   for (const axis of TRAIT_AXES) {
-    total += traits[axis] * PREFERENCE_WEIGHTS[axis];
-    weightSum += PREFERENCE_WEIGHTS[axis];
+    total += traits[axis] * prefs[axis];
+    weightSum += prefs[axis];
   }
   return total / weightSum;
 }
 
-// Percentile against a large background pool drawn from the same sampler —
-// this is the number the reveal quantifies the visitor's gut choices against.
-export function buildPercentileFn(seed: number, poolSize = 10_000): (s: number) => number {
+// Percentile against a large background pool drawn from the same sampler,
+// under a given beholder's weights.
+export function buildPercentileFn(
+  seed: number,
+  prefs: TraitVector,
+  poolSize = 10_000
+): (traits: TraitVector) => number {
   const rng = mulberry32(seed ^ 0x9e3779b9);
   const scores: number[] = [];
-  for (let i = 0; i < poolSize; i++) scores.push(score(sampleVector(rng).traits));
+  for (let i = 0; i < poolSize; i++) scores.push(score(sampleVector(rng).traits, prefs));
   scores.sort((a, b) => a - b);
-  return (s: number) => {
+  return (traits: TraitVector) => {
+    const s = score(traits, prefs);
     let lo = 0;
     let hi = scores.length;
     while (lo < hi) {
@@ -103,9 +117,15 @@ export function buildPercentileFn(seed: number, poolSize = 10_000): (s: number) 
   };
 }
 
-export function sampleCandidates(seed: number, count: number): CandidateSpec[] {
+export function sampleCandidates(
+  seed: number,
+  count: number,
+  profiles: Record<string, TraitVector> = PREFERENCE_PROFILES
+): CandidateSpec[] {
   const rng = mulberry32(seed);
-  const percentile = buildPercentileFn(seed);
+  const percentileFns = Object.fromEntries(
+    Object.entries(profiles).map(([name, prefs]) => [name, buildPercentileFn(seed, prefs)])
+  );
   const accepted: CandidateSpec[] = [];
 
   while (accepted.length < count) {
@@ -119,7 +139,6 @@ export function sampleCandidates(seed: number, count: number): CandidateSpec[] {
       continue;
     }
 
-    const s = score(traits);
     accepted.push({
       id: `cand-${accepted.length + 1}`,
       seed: candidateSeed,
@@ -128,8 +147,9 @@ export function sampleCandidates(seed: number, count: number): CandidateSpec[] {
       weaknesses,
       connectionAxis: strengths[int(rng, 0, strengths.length - 1)],
       flawAxis: weaknesses[int(rng, 0, weaknesses.length - 1)],
-      score: s,
-      percentile: percentile(s),
+      percentiles: Object.fromEntries(
+        Object.entries(percentileFns).map(([name, fn]) => [name, fn(traits)])
+      ),
     });
   }
   return accepted;

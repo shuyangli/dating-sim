@@ -27,8 +27,11 @@ Generation is cached by candidate seed in `out/candidates.json`, so re-runs
 only produce what's missing. Review `out/candidates.md` to judge whether the
 vignettes land — that file is the quality gate for the whole Mirror movement.
 
-- `src/traits.ts` — trait axes, seeded Pareto-frontier sampling, hidden scoring
-  and percentile rank against a 10,000-person background pool
+- `src/traits.ts` — 11 trait axes (including the market-legible ones: looks,
+  fitness, wealth, status), seeded Pareto-frontier sampling, and
+  beholder-relative scoring: percentiles are computed per preference profile
+  against a 10,000-person background pool, because a p99 is a property of a
+  scorer, not of a person
 - `src/prompt.ts` — the vignette-writer system prompt (the artistic core) and
   the structured output schema
 - `src/generate.ts` — CLI: batch generation, caching, markdown render

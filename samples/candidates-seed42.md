@@ -1,8 +1,8 @@
 # Settling — generated candidates
 
-_Vignette quality review. The trait numbers below are the hidden layer; the visitor only ever sees the prose._
+_Vignette quality review. The trait numbers below are the hidden layer; the visitor only ever sees the prose. Percentiles are per beholder — a score is a property of a scorer, not of a person._
 
-> Sample deck, hand-run: these twelve personas were authored by Claude in-session, applying the system prompt in src/prompt.ts to the real seed-42 trait cards. They stand in for API output and set the quality bar for the live generator.
+> Sample deck, hand-run: these twelve personas were authored by Claude in-session, applying the system prompt in src/prompt.ts to the real seed-42 trait cards. They stand in for API output and set the quality bar for the live generator. Trait schema v1: 8 axes, scored under a single fixed preference vector.
 
 ---
 
@@ -23,7 +23,7 @@ He tells you about his dad, finally — funny first, then not — and when he se
 
 <details><summary>Hidden layer</summary>
 
-- percentile: **p99** (score 0.708)
+- percentile by beholder: v1 fixed weights **p99**
 - strengths: warmth, humor, looks · weaknesses: stability
 - flaw axis: stability — Instability compounds across the dates: three jobs, a borrowed kitchen, duffel bags by the door, exit plans mentioned like small talk.
 - connection axis: humor — His humor is attention — the callbacks prove he listens, and the date-3 joke that catches your grief makes leaving him feel like losing a language.
@@ -50,7 +50,7 @@ When you tell him the thing you've never told anyone — that you want to quit �
 
 <details><summary>Hidden layer</summary>
 
-- percentile: **p56** (score 0.637)
+- percentile by beholder: v1 fixed weights **p56**
 - strengths: ambition, humor · weaknesses: curiosity
 - flaw axis: curiosity — Incuriosity as a closed loop: he never asks the second question, and the world outside his project registers as set dressing.
 - connection axis: ambition — His ambition is generous rather than vain — he keeps offering you a seat in the thing he's building, which makes the not-asking ache.
@@ -77,7 +77,7 @@ Under a framed map of the city in 1811 he shows you his notebook of questions he
 
 <details><summary>Hidden layer</summary>
 
-- percentile: **p44** (score 0.626)
+- percentile by beholder: v1 fixed weights **p44**
 - strengths: humor, curiosity · weaknesses: warmth
 - flaw axis: warmth — Coldness as a register error: your distress gets the same treatment as trivia, and tenderness gets filed.
 - connection axis: curiosity — Curiosity aimed at you — the notebook page — is the hook; he makes the world bigger, and being studied feels like being adored until you need to be held instead.
@@ -104,7 +104,7 @@ When your week falls apart he doesn't offer solutions; he shows up with containe
 
 <details><summary>Hidden layer</summary>
 
-- percentile: **p88** (score 0.674)
+- percentile by beholder: v1 fixed weights **p88**
 - strengths: stability, emotional availability, warmth · weaknesses: ambition
 - flaw axis: ambition — His lack of ambition only registers against the city's yardstick: contentment that a maximizer reads as a ceiling.
 - connection axis: stability — Stability rendered as the logistics of care — early, level photos, containers, the bath. The safety is the seduction.
@@ -131,7 +131,7 @@ His place is beautiful the way hotel rooms are beautiful, and being wanted by hi
 
 <details><summary>Hidden layer</summary>
 
-- percentile: **p86** (score 0.670)
+- percentile by beholder: v1 fixed weights **p86**
 - strengths: looks, warmth, ambition · weaknesses: curiosity
 - flaw axis: curiosity — Incuriosity as a fixed orbit: eight beloved restaurants and an unexamined painting — depth of routine, no appetite for the unknown.
 - connection axis: looks — Beauty deployed at you rather than at the room — being the only thing he looks at is the moment, and the grandmother story gives the looks a soul.
@@ -158,7 +158,7 @@ He introduces the oyster mushrooms like family, hands cupped around the flush, a
 
 <details><summary>Hidden layer</summary>
 
-- percentile: **p9** (score 0.583)
+- percentile by beholder: v1 fixed weights **p9**
 - strengths: warmth, curiosity · weaknesses: emotional availability
 - flaw axis: emotional availability — Deflection as reflex: every door toward feeling gets redirected to the nearest fascinating object.
 - connection axis: curiosity — Curiosity as gift-giving — annotated printouts, the grow tent — he shares wonder the way other men share feelings, which is exactly the problem.
@@ -185,7 +185,7 @@ He cooks badly and proudly, and over dinner he tells you he wants someone in the
 
 <details><summary>Hidden layer</summary>
 
-- percentile: **p9** (score 0.582)
+- percentile by beholder: v1 fixed weights **p9**
 - strengths: ambition, humor · weaknesses: chemistry, curiosity
 - flaw axis: curiosity — Incuriosity disguised as efficiency: he summarizes you mid-sentence and 'doesn't do places.'
 - connection axis: ambition — Mission as magnetism — the grandmother in Brownsville, the borrowed BOARD tag. His ambition is moral, which makes it much harder to dismiss.
@@ -212,7 +212,7 @@ His co-founder calls melting down and he handles it in four sentences, kind ones
 
 <details><summary>Hidden layer</summary>
 
-- percentile: **p4** (score 0.568)
+- percentile by beholder: v1 fixed weights **p4**
 - strengths: warmth, ambition · weaknesses: chemistry, stability
 - flaw axis: chemistry — Absent chemistry rendered as absence: at every checkpoint where the spark should be, it isn't, while everything else exceeds spec.
 - connection axis: ambition — Ambition with a memory — napkin supply chains plus an eleven-day-old pastry order. The perfect-on-paper card.
@@ -239,7 +239,7 @@ When you actually cry in front of him — ugly, the real thing — he doesn't pa
 
 <details><summary>Hidden layer</summary>
 
-- percentile: **p65** (score 0.645)
+- percentile by beholder: v1 fixed weights **p65**
 - strengths: emotional availability, curiosity, humor · weaknesses: warmth
 - flaw axis: warmth — Cold without being cruel: flawless emotional attunement, no instinct for physical or domestic tenderness.
 - connection axis: emotional availability — Radical availability — he names feelings in real time and holds your worst crying without flinching. Intimacy as competence.
@@ -266,7 +266,7 @@ He's been working on a cocktail all week and it's named after the joke you made 
 
 <details><summary>Hidden layer</summary>
 
-- percentile: **p60** (score 0.641)
+- percentile by beholder: v1 fixed weights **p60**
 - strengths: curiosity, humor, warmth · weaknesses: ambition, emotional availability
 - flaw axis: ambition — Ambition refused, possibly on principle: every open door gets a joke or a koan instead of a yes.
 - connection axis: humor — Humor as shared perception — he notices what you notice, half a second earlier, and names a drink after your joke. A private language, fast.
@@ -293,7 +293,7 @@ Kissing him rewires the evening; whatever this is, your body voted before you go
 
 <details><summary>Hidden layer</summary>
 
-- percentile: **p37** (score 0.620)
+- percentile by beholder: v1 fixed weights **p37**
 - strengths: chemistry, emotional availability · weaknesses: ambition, looks
 - flaw axis: ambition — Ambition deliberately sold off: the absence reads as peace up close and as settling from the scoreboard.
 - connection axis: emotional availability — Touch that overrides the paper score, plus undefended openness. This is the card that tests stated versus revealed preferences.
@@ -320,7 +320,7 @@ He's the uncle every kid orbits, and he keeps a hand on your back all night, int
 
 <details><summary>Hidden layer</summary>
 
-- percentile: **p13** (score 0.591)
+- percentile by beholder: v1 fixed weights **p13**
 - strengths: ambition, warmth · weaknesses: chemistry, curiosity
 - flaw axis: chemistry — The spark never argues its case: every kiss lands as fondness. The body abstains while the resume votes yes.
 - connection axis: ambition — Civic ambition plus logistical devotion — 'eighty thousand people a day, forever' is the line that makes him hard to dismiss.

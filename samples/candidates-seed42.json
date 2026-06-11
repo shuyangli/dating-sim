@@ -1,259 +1,603 @@
 {
-  "seed": 42,
-  "count": 12,
-  "note": "Sample deck, hand-run: these twelve personas were authored by Claude in-session, applying the system prompt in src/prompt.ts to the real seed-42 trait cards. They stand in for API output and set the quality bar for the live generator.",
-  "personas": {
-    "1290860478": {
-      "name": "Mateo",
-      "age": 31,
-      "bio": "Pastry cook, ex-actor, current threat to your Sunday plans. Currently between apartments — long story, it's a good one.",
-      "dates": [
-        {
-          "setting": "a wine bar on Halsey, Tuesday",
-          "vignette": "He arrives fifteen minutes late with no apology that makes sense — something about lending his phone to a stranger who was filming a pigeon. Within the hour he has a running bit going about the couple quietly breaking up two tables over, narrated so softly and so well that you have to bite your knuckle, and the bartender starts leaving the bottle. When you ask what he does, the answer has three jobs in it, two of them past tense."
+  "note": "Sample deck, hand-run: these twelve personas were authored by Claude in-session, applying the system prompt in src/prompt.ts to the real seed-42 trait cards. They stand in for API output and set the quality bar for the live generator. Trait schema v1: 8 axes, scored under a single fixed preference vector.",
+  "candidates": [
+    {
+      "spec": {
+        "id": "cand-1",
+        "seed": 1290860478,
+        "traits": {
+          "warmth": 0.9267553791264072,
+          "humor": 0.9059957207273692,
+          "looks": 0.9021841001720168,
+          "ambition": 0.6556258686818182,
+          "emotional availability": 0.6993852889630943,
+          "stability": 0.2225747009390034,
+          "curiosity": 0.5301172240171581,
+          "chemistry": 0.6987986307125538
         },
-        {
-          "setting": "a kitchen that isn't his, Sunset Park",
-          "vignette": "He cooks for you in his friend Marco's kitchen — he's crashing there until the sublet thing resolves — and the pork shoulder is genuinely perfect. Halfway through dinner he does the voice of your boss from a story you told a week ago, exactly right, and you realize he has been listening to you the entire time. There are two duffel bags by the door that he doesn't mention."
-        },
-        {
-          "setting": "Marco's roof, late",
-          "vignette": "He tells you about his dad, finally — funny first, then not — and when he sees it land he rescues you both with a joke timed like a stage actor's, so you end up laughing on the exhale of almost crying. You didn't know that was possible. Then he mentions, lightly, that he might do a season in Provincetown this summer, or Berlin in the fall, the way other people mention the weekend. He still hasn't replaced the phone."
+        "strengths": [
+          "warmth",
+          "humor",
+          "looks"
+        ],
+        "weaknesses": [
+          "stability"
+        ],
+        "connectionAxis": "humor",
+        "flawAxis": "stability",
+        "percentiles": {
+          "v1 fixed weights": 99
         }
-      ],
-      "flawSummary": "Instability compounds across the dates: three jobs, a borrowed kitchen, duffel bags by the door, exit plans mentioned like small talk.",
-      "connectionSummary": "His humor is attention — the callbacks prove he listens, and the date-3 joke that catches your grief makes leaving him feel like losing a language."
+      },
+      "persona": {
+        "name": "Mateo",
+        "age": 31,
+        "bio": "Pastry cook, ex-actor, current threat to your Sunday plans. Currently between apartments — long story, it's a good one.",
+        "dates": [
+          {
+            "setting": "a wine bar on Halsey, Tuesday",
+            "vignette": "He arrives fifteen minutes late with no apology that makes sense — something about lending his phone to a stranger who was filming a pigeon. Within the hour he has a running bit going about the couple quietly breaking up two tables over, narrated so softly and so well that you have to bite your knuckle, and the bartender starts leaving the bottle. When you ask what he does, the answer has three jobs in it, two of them past tense."
+          },
+          {
+            "setting": "a kitchen that isn't his, Sunset Park",
+            "vignette": "He cooks for you in his friend Marco's kitchen — he's crashing there until the sublet thing resolves — and the pork shoulder is genuinely perfect. Halfway through dinner he does the voice of your boss from a story you told a week ago, exactly right, and you realize he has been listening to you the entire time. There are two duffel bags by the door that he doesn't mention."
+          },
+          {
+            "setting": "Marco's roof, late",
+            "vignette": "He tells you about his dad, finally — funny first, then not — and when he sees it land he rescues you both with a joke timed like a stage actor's, so you end up laughing on the exhale of almost crying. You didn't know that was possible. Then he mentions, lightly, that he might do a season in Provincetown this summer, or Berlin in the fall, the way other people mention the weekend. He still hasn't replaced the phone."
+          }
+        ],
+        "flawSummary": "Instability compounds across the dates: three jobs, a borrowed kitchen, duffel bags by the door, exit plans mentioned like small talk.",
+        "connectionSummary": "His humor is attention — the callbacks prove he listens, and the date-3 joke that catches your grief makes leaving him feel like losing a language."
+      }
     },
-    "1438242902": {
-      "name": "Daniel",
-      "age": 34,
-      "bio": "Opening my second coffee shop in March, which is my personality now, per my sister. Quick to laugh, terrible at small plates, will absolutely show you the spreadsheet.",
-      "dates": [
-        {
-          "setting": "his own counter, after close",
-          "vignette": "He flips two chairs down off the tables and pulls you a cortado on a machine he's mid-repairing, narrating the pressure gauge like a getaway driver. The year he spent chasing the lease on the second location comes out as a story with villains and a heist, and his certainty is its own kind of handsome. When you mention the show you just saw, he nods politely and asks if you want to see the build-out photos."
+    {
+      "spec": {
+        "id": "cand-2",
+        "seed": 1438242902,
+        "traits": {
+          "warmth": 0.5858982094563544,
+          "humor": 0.837678201389499,
+          "looks": 0.563972566369921,
+          "ambition": 0.8380596373113803,
+          "emotional availability": 0.5867841039784253,
+          "stability": 0.6632606279570609,
+          "curiosity": 0.36490672441432254,
+          "chemistry": 0.6751266774721443
         },
-        {
-          "setting": "laksa, then a walk down Grand",
-          "vignette": "Over dinner he does an impression of his contractor so precise you make him do it twice. He asks exactly one question about your week, holds the answer for a beat, then sets it down somewhere you can both see he won't pick it up again. Later he stops at the second shop's papered-over windows and puts his palm flat on the glass, the way you'd steady a horse."
-        },
-        {
-          "setting": "dinner above the first shop",
-          "vignette": "When you tell him the thing you've never told anyone — that you want to quit — he says 'so quit, I'll put you to work,' and the terrifying part is that he means it, fully, by Tuesday. He has offered you a place in his life the way other men offer a drink. He has also never once asked what you'd want instead, there or anywhere; the question simply doesn't occur to him."
+        "strengths": [
+          "ambition",
+          "humor"
+        ],
+        "weaknesses": [
+          "curiosity"
+        ],
+        "connectionAxis": "ambition",
+        "flawAxis": "curiosity",
+        "percentiles": {
+          "v1 fixed weights": 56
         }
-      ],
-      "flawSummary": "Incuriosity as a closed loop: he never asks the second question, and the world outside his project registers as set dressing.",
-      "connectionSummary": "His ambition is generous rather than vain — he keeps offering you a seat in the thing he's building, which makes the not-asking ache."
+      },
+      "persona": {
+        "name": "Daniel",
+        "age": 34,
+        "bio": "Opening my second coffee shop in March, which is my personality now, per my sister. Quick to laugh, terrible at small plates, will absolutely show you the spreadsheet.",
+        "dates": [
+          {
+            "setting": "his own counter, after close",
+            "vignette": "He flips two chairs down off the tables and pulls you a cortado on a machine he's mid-repairing, narrating the pressure gauge like a getaway driver. The year he spent chasing the lease on the second location comes out as a story with villains and a heist, and his certainty is its own kind of handsome. When you mention the show you just saw, he nods politely and asks if you want to see the build-out photos."
+          },
+          {
+            "setting": "laksa, then a walk down Grand",
+            "vignette": "Over dinner he does an impression of his contractor so precise you make him do it twice. He asks exactly one question about your week, holds the answer for a beat, then sets it down somewhere you can both see he won't pick it up again. Later he stops at the second shop's papered-over windows and puts his palm flat on the glass, the way you'd steady a horse."
+          },
+          {
+            "setting": "dinner above the first shop",
+            "vignette": "When you tell him the thing you've never told anyone — that you want to quit — he says 'so quit, I'll put you to work,' and the terrifying part is that he means it, fully, by Tuesday. He has offered you a place in his life the way other men offer a drink. He has also never once asked what you'd want instead, there or anywhere; the question simply doesn't occur to him."
+          }
+        ],
+        "flawSummary": "Incuriosity as a closed loop: he never asks the second question, and the world outside his project registers as set dressing.",
+        "connectionSummary": "His ambition is generous rather than vain — he keeps offering you a seat in the thing he's building, which makes the not-asking ache."
+      }
     },
-    "586752650": {
-      "name": "Julian",
-      "age": 29,
-      "bio": "Fact-checker by day. I know the best Georgian food in Brighton Beach, the history of your block, and exactly one card trick. Keep up.",
-      "dates": [
-        {
-          "setting": "a Georgian basement restaurant, Brighton Beach",
-          "vignette": "He orders in halting transliterated Georgian and tells you the khachapuri's whole imperial history before it lands, and somehow it's riveting instead of insufferable. He's already three tabs deep into the thing you mentioned loving last week, asking questions about it nobody has ever asked you. When the waiter brings the wrong wine, the line he murmurs to you is very funny and a little too sharp, and the waiter hears it."
+    {
+      "spec": {
+        "id": "cand-3",
+        "seed": 586752650,
+        "traits": {
+          "warmth": 0.3071041948744096,
+          "humor": 0.9221511894208378,
+          "looks": 0.6109658756293356,
+          "ambition": 0.580237066745758,
+          "emotional availability": 0.5317375367507339,
+          "stability": 0.6878466961439699,
+          "curiosity": 0.8905331554217264,
+          "chemistry": 0.6134683371055871
         },
-        {
-          "setting": "a stamp-and-postcard fair in a Masonic lodge",
-          "vignette": "It should be a punishment and is instead the best Saturday you've had in a year — he keeps handing you hundred-year-old postcards and inventing the love affairs behind them. On the walk home your friend texts you bad news, and you say so; he says 'that's rough,' accurately, the way you'd describe weather, and keeps walking. A block later he's telling you about the lodge's defunct initiation rituals."
-        },
-        {
-          "setting": "his apartment, books triple-stacked",
-          "vignette": "Under a framed map of the city in 1811 he shows you his notebook of questions he hasn't answered yet, and the page he adds while you watch has you on it. It is the most romantic thing anyone has done for you, and he does not appear to know it. When you reach for him afterward in the dark and say the honest thing, he goes very still, then says 'noted' — and you can hear that he thinks he's joking."
+        "strengths": [
+          "humor",
+          "curiosity"
+        ],
+        "weaknesses": [
+          "warmth"
+        ],
+        "connectionAxis": "curiosity",
+        "flawAxis": "warmth",
+        "percentiles": {
+          "v1 fixed weights": 44
         }
-      ],
-      "flawSummary": "Coldness as a register error: your distress gets the same treatment as trivia, and tenderness gets filed.",
-      "connectionSummary": "Curiosity aimed at you — the notebook page — is the hook; he makes the world bigger, and being studied feels like being adored until you need to be held instead."
+      },
+      "persona": {
+        "name": "Julian",
+        "age": 29,
+        "bio": "Fact-checker by day. I know the best Georgian food in Brighton Beach, the history of your block, and exactly one card trick. Keep up.",
+        "dates": [
+          {
+            "setting": "a Georgian basement restaurant, Brighton Beach",
+            "vignette": "He orders in halting transliterated Georgian and tells you the khachapuri's whole imperial history before it lands, and somehow it's riveting instead of insufferable. He's already three tabs deep into the thing you mentioned loving last week, asking questions about it nobody has ever asked you. When the waiter brings the wrong wine, the line he murmurs to you is very funny and a little too sharp, and the waiter hears it."
+          },
+          {
+            "setting": "a stamp-and-postcard fair in a Masonic lodge",
+            "vignette": "It should be a punishment and is instead the best Saturday you've had in a year — he keeps handing you hundred-year-old postcards and inventing the love affairs behind them. On the walk home your friend texts you bad news, and you say so; he says 'that's rough,' accurately, the way you'd describe weather, and keeps walking. A block later he's telling you about the lodge's defunct initiation rituals."
+          },
+          {
+            "setting": "his apartment, books triple-stacked",
+            "vignette": "Under a framed map of the city in 1811 he shows you his notebook of questions he hasn't answered yet, and the page he adds while you watch has you on it. It is the most romantic thing anyone has done for you, and he does not appear to know it. When you reach for him afterward in the dark and say the honest thing, he goes very still, then says 'noted' — and you can hear that he thinks he's joking."
+          }
+        ],
+        "flawSummary": "Coldness as a register error: your distress gets the same treatment as trivia, and tenderness gets filed.",
+        "connectionSummary": "Curiosity aimed at you — the notebook page — is the hook; he makes the world bigger, and being studied feels like being adored until you need to be held instead."
+      }
     },
-    "1014293152": {
-      "name": "Sam",
-      "age": 36,
-      "bio": "Fourth-grade teacher, eleven years. I make a serious Sunday gravy and I'm at the same coffee place every morning if you want to find me. My niece set this up.",
-      "dates": [
-        {
-          "setting": "the corner place he always goes",
-          "vignette": "He's early, at a corner table, and he stands up when you come in, which nobody has done in years. He remembers everything from your messages without performing it — asks about the interview by the company's name. When you ask where he sees himself in five years he laughs, not unkindly, and says 'here, probably — it's a good here,' and gestures at the block like that settles it."
+    {
+      "spec": {
+        "id": "cand-4",
+        "seed": 1014293152,
+        "traits": {
+          "warmth": 0.8324408677290194,
+          "humor": 0.6255873664747923,
+          "looks": 0.5503387414850295,
+          "ambition": 0.3095176520757377,
+          "emotional availability": 0.7912312404881232,
+          "stability": 0.9015814822749234,
+          "curiosity": 0.5715208146255464,
+          "chemistry": 0.6292174671310931
         },
-        {
-          "setting": "Sunday gravy at his place",
-          "vignette": "His apartment looks like someone finished it: photos hung level, a drawer that just has batteries in it. While the gravy goes he slips upstairs to check on his neighbor's cat like it's nothing, and the voices he does grading fourth-grade essays at the counter make you laugh harder than you mean to. The five-year question answers itself anyway — there's a school calendar on the fridge that runs to June, and nothing after."
-        },
-        {
-          "setting": "your apartment, the bad week",
-          "vignette": "When your week falls apart he doesn't offer solutions; he shows up with containers, runs you a bath like it's a normal thing to do for someone, and sits on the floor outside the door telling you about the worst field trip of his career until you're laughing in the water. You sleep better than you have in months. In the morning he says, easy as anything, that he's never really wanted more than this — and you lie there doing math on the word 'more' while he makes eggs."
+        "strengths": [
+          "stability",
+          "emotional availability",
+          "warmth"
+        ],
+        "weaknesses": [
+          "ambition"
+        ],
+        "connectionAxis": "stability",
+        "flawAxis": "ambition",
+        "percentiles": {
+          "v1 fixed weights": 88
         }
-      ],
-      "flawSummary": "His lack of ambition only registers against the city's yardstick: contentment that a maximizer reads as a ceiling.",
-      "connectionSummary": "Stability rendered as the logistics of care — early, level photos, containers, the bath. The safety is the seduction."
+      },
+      "persona": {
+        "name": "Sam",
+        "age": 36,
+        "bio": "Fourth-grade teacher, eleven years. I make a serious Sunday gravy and I'm at the same coffee place every morning if you want to find me. My niece set this up.",
+        "dates": [
+          {
+            "setting": "the corner place he always goes",
+            "vignette": "He's early, at a corner table, and he stands up when you come in, which nobody has done in years. He remembers everything from your messages without performing it — asks about the interview by the company's name. When you ask where he sees himself in five years he laughs, not unkindly, and says 'here, probably — it's a good here,' and gestures at the block like that settles it."
+          },
+          {
+            "setting": "Sunday gravy at his place",
+            "vignette": "His apartment looks like someone finished it: photos hung level, a drawer that just has batteries in it. While the gravy goes he slips upstairs to check on his neighbor's cat like it's nothing, and the voices he does grading fourth-grade essays at the counter make you laugh harder than you mean to. The five-year question answers itself anyway — there's a school calendar on the fridge that runs to June, and nothing after."
+          },
+          {
+            "setting": "your apartment, the bad week",
+            "vignette": "When your week falls apart he doesn't offer solutions; he shows up with containers, runs you a bath like it's a normal thing to do for someone, and sits on the floor outside the door telling you about the worst field trip of his career until you're laughing in the water. You sleep better than you have in months. In the morning he says, easy as anything, that he's never really wanted more than this — and you lie there doing math on the word 'more' while he makes eggs."
+          }
+        ],
+        "flawSummary": "His lack of ambition only registers against the city's yardstick: contentment that a maximizer reads as a ceiling.",
+        "connectionSummary": "Stability rendered as the logistics of care — early, level photos, containers, the bath. The safety is the seduction."
+      }
     },
-    "1601459226": {
-      "name": "Andre",
-      "age": 33,
-      "bio": "Cardiology fellow, marathon slow-jogger, my abuela's favorite. Fair warning: I will be on call, and I will still show up.",
-      "dates": [
-        {
-          "setting": "a dim restaurant he chose well",
-          "vignette": "The room does a thing when he walks in — the bartender straightens, a date two tables over loses his thread — and he crosses it looking only at you, which you feel in your sternum. He's warm in the old-fashioned way: your coat taken, your water refilled, your full name asked for and then used. It takes you until dessert to notice you know his whole residency and he doesn't know what you do."
+    {
+      "spec": {
+        "id": "cand-5",
+        "seed": 1601459226,
+        "traits": {
+          "warmth": 0.8871549770934507,
+          "humor": 0.5481190812774003,
+          "looks": 0.8630316169559955,
+          "ambition": 0.9041277378750965,
+          "emotional availability": 0.6054380294401198,
+          "stability": 0.5347838344052434,
+          "curiosity": 0.33212394528090955,
+          "chemistry": 0.6725667349062859
         },
-        {
-          "setting": "post-call, a photo booth in the Village",
-          "vignette": "He shows up gray with exhaustion because he said he would, and is somehow still the most beautiful thing on the train platform. In the photo booth he laughs for real and arranges you both perfectly, and holds your hand on the walk after like it's a fact about the world. When you suggest the night market next week — something new — he says, gently, that he does the same eight things and likes all eight, like a man reading a beloved menu."
-        },
-        {
-          "setting": "his apartment",
-          "vignette": "His place is beautiful the way hotel rooms are beautiful, and being wanted by him is weather — total, undeniable. Afterward he traces your collarbone and tells you about his grandmother teaching him to dance in a kitchen in Bayamón, and you would live inside the story if he'd let you stay. But when you point at the one strange painting he owns and ask where it came from, he says 'it came with the frame,' and you understand that he has never once wondered."
+        "strengths": [
+          "looks",
+          "warmth",
+          "ambition"
+        ],
+        "weaknesses": [
+          "curiosity"
+        ],
+        "connectionAxis": "looks",
+        "flawAxis": "curiosity",
+        "percentiles": {
+          "v1 fixed weights": 86
         }
-      ],
-      "flawSummary": "Incuriosity as a fixed orbit: eight beloved restaurants and an unexamined painting — depth of routine, no appetite for the unknown.",
-      "connectionSummary": "Beauty deployed at you rather than at the room — being the only thing he looks at is the moment, and the grandmother story gives the looks a soul."
+      },
+      "persona": {
+        "name": "Andre",
+        "age": 33,
+        "bio": "Cardiology fellow, marathon slow-jogger, my abuela's favorite. Fair warning: I will be on call, and I will still show up.",
+        "dates": [
+          {
+            "setting": "a dim restaurant he chose well",
+            "vignette": "The room does a thing when he walks in — the bartender straightens, a date two tables over loses his thread — and he crosses it looking only at you, which you feel in your sternum. He's warm in the old-fashioned way: your coat taken, your water refilled, your full name asked for and then used. It takes you until dessert to notice you know his whole residency and he doesn't know what you do."
+          },
+          {
+            "setting": "post-call, a photo booth in the Village",
+            "vignette": "He shows up gray with exhaustion because he said he would, and is somehow still the most beautiful thing on the train platform. In the photo booth he laughs for real and arranges you both perfectly, and holds your hand on the walk after like it's a fact about the world. When you suggest the night market next week — something new — he says, gently, that he does the same eight things and likes all eight, like a man reading a beloved menu."
+          },
+          {
+            "setting": "his apartment",
+            "vignette": "His place is beautiful the way hotel rooms are beautiful, and being wanted by him is weather — total, undeniable. Afterward he traces your collarbone and tells you about his grandmother teaching him to dance in a kitchen in Bayamón, and you would live inside the story if he'd let you stay. But when you point at the one strange painting he owns and ask where it came from, he says 'it came with the frame,' and you understand that he has never once wondered."
+          }
+        ],
+        "flawSummary": "Incuriosity as a fixed orbit: eight beloved restaurants and an unexamined painting — depth of routine, no appetite for the unknown.",
+        "connectionSummary": "Beauty deployed at you rather than at the room — being the only thing he looks at is the moment, and the grandmother story gives the looks a soul."
+      }
     },
-    "1075308387": {
-      "name": "Wei",
-      "age": 28,
-      "bio": "Lab tech, amateur mycologist, will trade foraged chanterelles for good conversation. My therapist says I should mention that I have one.",
-      "dates": [
-        {
-          "setting": "Prospect Park with a paring knife",
-          "vignette": "He brings a paper bag and shows you which mushrooms are lying to you, delighted, like the woods are gossip. He notices you're cold before you do and hands you his flannel without making it a moment. When you ask why he left Calgary he says 'long story,' and points out a hawk that turns out not to be there."
+    {
+      "spec": {
+        "id": "cand-6",
+        "seed": 1075308387,
+        "traits": {
+          "warmth": 0.7841287524881773,
+          "humor": 0.6155609838664532,
+          "looks": 0.6026711749844252,
+          "ambition": 0.5140692317858339,
+          "emotional availability": 0.22345702995080502,
+          "stability": 0.6596930850762873,
+          "curiosity": 0.8329318160307594,
+          "chemistry": 0.544049160880968
         },
-        {
-          "setting": "the Yunnan place on Eighth",
-          "vignette": "He remembers you hate cilantro and orders around it without checking, then pulls a folded printout from his jacket — the bioluminescent fungus he promised you'd like, annotated for you in the margins — and your chest does something dangerous. He laughs at your worst joke like it cost him nothing. Later you ask about the ex he almost mentioned, and he describes, instead, with total enthusiasm, the reproductive strategy of a slime mold."
-        },
-        {
-          "setting": "the grow tent in his closet",
-          "vignette": "He introduces the oyster mushrooms like family, hands cupped around the flush, and lets you do the misting, which you understand by now is intimacy. When you tell him you're falling for him, he holds completely still — the way he taught you to hold still when something wild is close — and then says 'the mist bottle's empty,' in a voice that is trying. You water nothing for a while, together, in the blue light."
+        "strengths": [
+          "warmth",
+          "curiosity"
+        ],
+        "weaknesses": [
+          "emotional availability"
+        ],
+        "connectionAxis": "curiosity",
+        "flawAxis": "emotional availability",
+        "percentiles": {
+          "v1 fixed weights": 9
         }
-      ],
-      "flawSummary": "Deflection as reflex: every door toward feeling gets redirected to the nearest fascinating object.",
-      "connectionSummary": "Curiosity as gift-giving — annotated printouts, the grow tent — he shares wonder the way other men share feelings, which is exactly the problem."
+      },
+      "persona": {
+        "name": "Wei",
+        "age": 28,
+        "bio": "Lab tech, amateur mycologist, will trade foraged chanterelles for good conversation. My therapist says I should mention that I have one.",
+        "dates": [
+          {
+            "setting": "Prospect Park with a paring knife",
+            "vignette": "He brings a paper bag and shows you which mushrooms are lying to you, delighted, like the woods are gossip. He notices you're cold before you do and hands you his flannel without making it a moment. When you ask why he left Calgary he says 'long story,' and points out a hawk that turns out not to be there."
+          },
+          {
+            "setting": "the Yunnan place on Eighth",
+            "vignette": "He remembers you hate cilantro and orders around it without checking, then pulls a folded printout from his jacket — the bioluminescent fungus he promised you'd like, annotated for you in the margins — and your chest does something dangerous. He laughs at your worst joke like it cost him nothing. Later you ask about the ex he almost mentioned, and he describes, instead, with total enthusiasm, the reproductive strategy of a slime mold."
+          },
+          {
+            "setting": "the grow tent in his closet",
+            "vignette": "He introduces the oyster mushrooms like family, hands cupped around the flush, and lets you do the misting, which you understand by now is intimacy. When you tell him you're falling for him, he holds completely still — the way he taught you to hold still when something wild is close — and then says 'the mist bottle's empty,' in a voice that is trying. You water nothing for a while, together, in the blue light."
+          }
+        ],
+        "flawSummary": "Deflection as reflex: every door toward feeling gets redirected to the nearest fascinating object.",
+        "connectionSummary": "Curiosity as gift-giving — annotated printouts, the grow tent — he shares wonder the way other men share feelings, which is exactly the problem."
+      }
     },
-    "8252676": {
-      "name": "Marcus",
-      "age": 38,
-      "bio": "Recovering lawyer, current founder of a tenant-rights nonprofit that runs on spite and grant money. Funniest man my mother has ever met, per my mother.",
-      "dates": [
-        {
-          "setting": "happy hour he's late leaving",
-          "vignette": "He's mid-fundraise and runs the first twenty minutes like a pitch, but it's a great pitch — eviction data, the grandmother in Brownsville he kept housed for nine years, a joke about process servers that makes you set down your drink. He tips like he's apologizing to the whole bar. When you bring up the trip you're planning he says 'I don't really do places,' smiling, and you laugh before you realize he isn't joking."
+    {
+      "spec": {
+        "id": "cand-7",
+        "seed": 8252676,
+        "traits": {
+          "warmth": 0.6563894033432006,
+          "humor": 0.8887273877393455,
+          "looks": 0.5088051587343216,
+          "ambition": 0.7987643477832899,
+          "emotional availability": 0.6214545807335525,
+          "stability": 0.6606420931406318,
+          "curiosity": 0.2221765182213858,
+          "chemistry": 0.3205193701898679
         },
-        {
-          "setting": "a gala his org can't afford",
-          "vignette": "He gets you in with a name tag that says BOARD and spends the night making rich donors laugh while winking at you across the room like a co-conspirator, and it works on you — competence is its own cologne. He introduces you to the city councilmember as 'the reason I was late Tuesday,' which is somehow the nicest thing anyone's said about you all month. In the cab home, he answers your question about his twenties with his resume, accurate to the month."
-        },
-        {
-          "setting": "scorched rice at his place",
-          "vignette": "He cooks badly and proudly, and over dinner he tells you he wants someone in the apartment for when the work stops working — the most honest thing he's said, and you believe it; you can see your coat on his hook. Then you start telling him how you really ended up in this city, the true version, and he nods at the first landmark and finishes the story wrong, confidently, the way he probably finishes paragraphs in other people's grant proposals."
+        "strengths": [
+          "ambition",
+          "humor"
+        ],
+        "weaknesses": [
+          "chemistry",
+          "curiosity"
+        ],
+        "connectionAxis": "ambition",
+        "flawAxis": "curiosity",
+        "percentiles": {
+          "v1 fixed weights": 9
         }
-      ],
-      "flawSummary": "Incuriosity disguised as efficiency: he summarizes you mid-sentence and 'doesn't do places.'",
-      "connectionSummary": "Mission as magnetism — the grandmother in Brownsville, the borrowed BOARD tag. His ambition is moral, which makes it much harder to dismiss."
+      },
+      "persona": {
+        "name": "Marcus",
+        "age": 38,
+        "bio": "Recovering lawyer, current founder of a tenant-rights nonprofit that runs on spite and grant money. Funniest man my mother has ever met, per my mother.",
+        "dates": [
+          {
+            "setting": "happy hour he's late leaving",
+            "vignette": "He's mid-fundraise and runs the first twenty minutes like a pitch, but it's a great pitch — eviction data, the grandmother in Brownsville he kept housed for nine years, a joke about process servers that makes you set down your drink. He tips like he's apologizing to the whole bar. When you bring up the trip you're planning he says 'I don't really do places,' smiling, and you laugh before you realize he isn't joking."
+          },
+          {
+            "setting": "a gala his org can't afford",
+            "vignette": "He gets you in with a name tag that says BOARD and spends the night making rich donors laugh while winking at you across the room like a co-conspirator, and it works on you — competence is its own cologne. He introduces you to the city councilmember as 'the reason I was late Tuesday,' which is somehow the nicest thing anyone's said about you all month. In the cab home, he answers your question about his twenties with his resume, accurate to the month."
+          },
+          {
+            "setting": "scorched rice at his place",
+            "vignette": "He cooks badly and proudly, and over dinner he tells you he wants someone in the apartment for when the work stops working — the most honest thing he's said, and you believe it; you can see your coat on his hook. Then you start telling him how you really ended up in this city, the true version, and he nods at the first landmark and finishes the story wrong, confidently, the way he probably finishes paragraphs in other people's grant proposals."
+          }
+        ],
+        "flawSummary": "Incuriosity disguised as efficiency: he summarizes you mid-sentence and 'doesn't do places.'",
+        "connectionSummary": "Mission as magnetism — the grandmother in Brownsville, the borrowed BOARD tag. His ambition is moral, which makes it much harder to dismiss."
+      }
     },
-    "109971062": {
-      "name": "Tunde",
-      "age": 35,
-      "bio": "Built a maternal-health startup, lost a maternal-health startup, building a better one. Lagos, then Houston, then here. I believe in audacious things and I will remember your birthday.",
-      "dates": [
-        {
-          "setting": "a quiet Nigerian spot he knows the owner of",
-          "vignette": "He asks the waiter's name and uses it; he asks yours twice, to be sure he's saying it right. When he describes the clinic network he's rebuilding — the one that failed, then the one that won't — he draws the supply chain on a napkin, and you catch yourself wanting to invest in a man. At the goodbye hug you wait for the drop in your stomach, and it doesn't come, and you tell yourself it's the cold."
+    {
+      "spec": {
+        "id": "cand-8",
+        "seed": 109971062,
+        "traits": {
+          "warmth": 0.8976465387037024,
+          "humor": 0.5493020358495414,
+          "looks": 0.5196914766449481,
+          "ambition": 0.9417553725722245,
+          "emotional availability": 0.5098505940753967,
+          "stability": 0.2800825295154937,
+          "curiosity": 0.5839468378573656,
+          "chemistry": 0.3425662121619098
         },
-        {
-          "setting": "the park, with pastry",
-          "vignette": "He brings your favorite — mentioned once, eleven days ago, in passing. The pilot he's planning in Newark is audacious and detailed and probably going to work, and watching him believe in it is like standing near a furnace. He takes your hand on the bridge and it is pleasant: exactly, only, precisely pleasant."
-        },
-        {
-          "setting": "his roof, after the phone call",
-          "vignette": "His co-founder calls melting down and he handles it in four sentences, kind ones, then comes back to you completely present, like a door closed behind him. He tells you that you feel like home, and he says it with his whole face on. You kiss him up there to check your work, and it's like hearing a song you know is good in a language you will never speak."
+        "strengths": [
+          "warmth",
+          "ambition"
+        ],
+        "weaknesses": [
+          "chemistry",
+          "stability"
+        ],
+        "connectionAxis": "ambition",
+        "flawAxis": "chemistry",
+        "percentiles": {
+          "v1 fixed weights": 4
         }
-      ],
-      "flawSummary": "Absent chemistry rendered as absence: at every checkpoint where the spark should be, it isn't, while everything else exceeds spec.",
-      "connectionSummary": "Ambition with a memory — napkin supply chains plus an eleven-day-old pastry order. The perfect-on-paper card."
+      },
+      "persona": {
+        "name": "Tunde",
+        "age": 35,
+        "bio": "Built a maternal-health startup, lost a maternal-health startup, building a better one. Lagos, then Houston, then here. I believe in audacious things and I will remember your birthday.",
+        "dates": [
+          {
+            "setting": "a quiet Nigerian spot he knows the owner of",
+            "vignette": "He asks the waiter's name and uses it; he asks yours twice, to be sure he's saying it right. When he describes the clinic network he's rebuilding — the one that failed, then the one that won't — he draws the supply chain on a napkin, and you catch yourself wanting to invest in a man. At the goodbye hug you wait for the drop in your stomach, and it doesn't come, and you tell yourself it's the cold."
+          },
+          {
+            "setting": "the park, with pastry",
+            "vignette": "He brings your favorite — mentioned once, eleven days ago, in passing. The pilot he's planning in Newark is audacious and detailed and probably going to work, and watching him believe in it is like standing near a furnace. He takes your hand on the bridge and it is pleasant: exactly, only, precisely pleasant."
+          },
+          {
+            "setting": "his roof, after the phone call",
+            "vignette": "His co-founder calls melting down and he handles it in four sentences, kind ones, then comes back to you completely present, like a door closed behind him. He tells you that you feel like home, and he says it with his whole face on. You kiss him up there to check your work, and it's like hearing a song you know is good in a language you will never speak."
+          }
+        ],
+        "flawSummary": "Absent chemistry rendered as absence: at every checkpoint where the spark should be, it isn't, while everything else exceeds spec.",
+        "connectionSummary": "Ambition with a memory — napkin supply chains plus an eleven-day-old pastry order. The perfect-on-paper card."
+      }
     },
-    "573283616": {
-      "name": "Eli",
-      "age": 30,
-      "bio": "Grief counselor, improv dropout — the two are related. I will ask you a real question on the first date. You've been warned.",
-      "dates": [
-        {
-          "setting": "a too-loud bar he makes quiet",
-          "vignette": "Twenty minutes in, he asks what you're afraid this date will turn out to be, and then actually waits — and answering out loud feels like setting down a bag you forgot you were carrying. He tells you about his own last heartbreak unprompted, cleanly, without a flinch, and is funnier about it than he has any right to be. When your drink spills, he watches you mop it up with real interest and never reaches for a napkin."
+    {
+      "spec": {
+        "id": "cand-9",
+        "seed": 573283616,
+        "traits": {
+          "warmth": 0.31541870649671183,
+          "humor": 0.8758832750306464,
+          "looks": 0.551377590931952,
+          "ambition": 0.6137185930274427,
+          "emotional availability": 0.8011371538927778,
+          "stability": 0.5072697610128671,
+          "curiosity": 0.9164137162663973,
+          "chemistry": 0.6261594760697334
         },
-        {
-          "setting": "the ferry, going nowhere in particular",
-          "vignette": "He names the thing between you on the rail — 'I like you, I notice I'm scared of how much, and I'm telling you because secrets metastasize' — and nobody has ever talked to you like this, like the weather report and the weather at once. He's funny about death the way only people who work inside it get to be, and you laugh into the wind until your eyes water. But when you start shivering, he observes 'you're cold' with clinical accuracy and keeps both hands in his pockets."
-        },
-        {
-          "setting": "his couch, the night you break",
-          "vignette": "When you actually cry in front of him — ugly, the real thing — he doesn't panic and doesn't fix; he stays, asks where in your body it lives, and you understand that this is a kind of love most men cannot do. Afterward, hollowed out and grateful, you ask, small, if he'd make you tea. He tells you, gently and with perfect openness, that caretaking isn't really something he does, that he believes in your capacity — and then gets it for you anyway, eventually, like a man translating from a language he respects but doesn't speak."
+        "strengths": [
+          "emotional availability",
+          "curiosity",
+          "humor"
+        ],
+        "weaknesses": [
+          "warmth"
+        ],
+        "connectionAxis": "emotional availability",
+        "flawAxis": "warmth",
+        "percentiles": {
+          "v1 fixed weights": 65
         }
-      ],
-      "flawSummary": "Cold without being cruel: flawless emotional attunement, no instinct for physical or domestic tenderness.",
-      "connectionSummary": "Radical availability — he names feelings in real time and holds your worst crying without flinching. Intimacy as competence."
+      },
+      "persona": {
+        "name": "Eli",
+        "age": 30,
+        "bio": "Grief counselor, improv dropout — the two are related. I will ask you a real question on the first date. You've been warned.",
+        "dates": [
+          {
+            "setting": "a too-loud bar he makes quiet",
+            "vignette": "Twenty minutes in, he asks what you're afraid this date will turn out to be, and then actually waits — and answering out loud feels like setting down a bag you forgot you were carrying. He tells you about his own last heartbreak unprompted, cleanly, without a flinch, and is funnier about it than he has any right to be. When your drink spills, he watches you mop it up with real interest and never reaches for a napkin."
+          },
+          {
+            "setting": "the ferry, going nowhere in particular",
+            "vignette": "He names the thing between you on the rail — 'I like you, I notice I'm scared of how much, and I'm telling you because secrets metastasize' — and nobody has ever talked to you like this, like the weather report and the weather at once. He's funny about death the way only people who work inside it get to be, and you laugh into the wind until your eyes water. But when you start shivering, he observes 'you're cold' with clinical accuracy and keeps both hands in his pockets."
+          },
+          {
+            "setting": "his couch, the night you break",
+            "vignette": "When you actually cry in front of him — ugly, the real thing — he doesn't panic and doesn't fix; he stays, asks where in your body it lives, and you understand that this is a kind of love most men cannot do. Afterward, hollowed out and grateful, you ask, small, if he'd make you tea. He tells you, gently and with perfect openness, that caretaking isn't really something he does, that he believes in your capacity — and then gets it for you anyway, eventually, like a man translating from a language he respects but doesn't speak."
+          }
+        ],
+        "flawSummary": "Cold without being cruel: flawless emotional attunement, no instinct for physical or domestic tenderness.",
+        "connectionSummary": "Radical availability — he names feelings in real time and holds your worst crying without flinching. Intimacy as competence."
+      }
     },
-    "1682654999": {
-      "name": "Oscar",
-      "age": 27,
-      "bio": "Bartender at the place with the good jukebox. I know a guy for everything. Ask me about the time I judged a chili cook-off under a fake name.",
-      "dates": [
-        {
-          "setting": "his bar, his night off",
-          "vignette": "He's the funniest person you've met in years, and not in the performing way — in the way where he notices the same things you do, half a second earlier. He walks you home the long way to show you a community garden where he knows the chickens by name, and the names are all lawyers from his old block. When you ask what's next for him — a place of his own, maybe — he grins and says 'next is Tuesday,' and changes the channel."
+    {
+      "spec": {
+        "id": "cand-10",
+        "seed": 1682654999,
+        "traits": {
+          "warmth": 0.8600614213896915,
+          "humor": 0.8672125649871305,
+          "looks": 0.6732210360933095,
+          "ambition": 0.20786735501606018,
+          "emotional availability": 0.36074644163018094,
+          "stability": 0.6697071423754095,
+          "curiosity": 0.8912215734273194,
+          "chemistry": 0.578245381033048
         },
-        {
-          "setting": "a projector in the airshaft",
-          "vignette": "He shows up with a duffel of borrowed equipment because you said you'd never seen Stop Making Sense, and projects it on the brick wall outside his roommate's window, narrating David Byrne's career between songs like a folk tale. The neighbor bangs on a pipe and you both laugh so hard the picture shakes. The bar's owner wants to sell him the place on a handshake, he mentions, the way you'd mention a flyer for a missing cat."
-        },
-        {
-          "setting": "last call, a drink with your name on it",
-          "vignette": "He's been working on a cocktail all week and it's named after the joke you made on the first date, which earns the month all by itself; it's perfect, obviously — everything he bothers to finish is. You ask, gently, about the owner's offer. He goes somewhere behind his eyes and says the thing about money ruining the only rooms he's ever loved, and you can't tell if it's wisdom or a door painted on a wall."
+        "strengths": [
+          "curiosity",
+          "humor",
+          "warmth"
+        ],
+        "weaknesses": [
+          "ambition",
+          "emotional availability"
+        ],
+        "connectionAxis": "humor",
+        "flawAxis": "ambition",
+        "percentiles": {
+          "v1 fixed weights": 60
         }
-      ],
-      "flawSummary": "Ambition refused, possibly on principle: every open door gets a joke or a koan instead of a yes.",
-      "connectionSummary": "Humor as shared perception — he notices what you notice, half a second earlier, and names a drink after your joke. A private language, fast."
+      },
+      "persona": {
+        "name": "Oscar",
+        "age": 27,
+        "bio": "Bartender at the place with the good jukebox. I know a guy for everything. Ask me about the time I judged a chili cook-off under a fake name.",
+        "dates": [
+          {
+            "setting": "his bar, his night off",
+            "vignette": "He's the funniest person you've met in years, and not in the performing way — in the way where he notices the same things you do, half a second earlier. He walks you home the long way to show you a community garden where he knows the chickens by name, and the names are all lawyers from his old block. When you ask what's next for him — a place of his own, maybe — he grins and says 'next is Tuesday,' and changes the channel."
+          },
+          {
+            "setting": "a projector in the airshaft",
+            "vignette": "He shows up with a duffel of borrowed equipment because you said you'd never seen Stop Making Sense, and projects it on the brick wall outside his roommate's window, narrating David Byrne's career between songs like a folk tale. The neighbor bangs on a pipe and you both laugh so hard the picture shakes. The bar's owner wants to sell him the place on a handshake, he mentions, the way you'd mention a flyer for a missing cat."
+          },
+          {
+            "setting": "last call, a drink with your name on it",
+            "vignette": "He's been working on a cocktail all week and it's named after the joke you made on the first date, which earns the month all by itself; it's perfect, obviously — everything he bothers to finish is. You ask, gently, about the owner's offer. He goes somewhere behind his eyes and says the thing about money ruining the only rooms he's ever loved, and you can't tell if it's wisdom or a door painted on a wall."
+          }
+        ],
+        "flawSummary": "Ambition refused, possibly on principle: every open door gets a joke or a koan instead of a yes.",
+        "connectionSummary": "Humor as shared perception — he notices what you notice, half a second earlier, and names a drink after your joke. A private language, fast."
+      }
     },
-    "371525912": {
-      "name": "Ben",
-      "age": 39,
-      "bio": "Bike-tour guide, occasional carpenter, oldest guy at the climbing gym. The photos are accurate; I'm told that's a choice.",
-      "dates": [
-        {
-          "setting": "coffee, then nowhere in particular",
-          "vignette": "You almost don't show — the photos undersell exactly nothing, and he is precisely that guy, in a jacket from two decades ago. Then he touches your shoulder to steer you out of a cyclist's path, and your whole arm reports it like news. He asks how your day actually was, then asks the follow-up, and the follow-up to that; when the conversation reaches his work, he shrugs that the tours are seasonal and that's the whole plan, comfortable as a man describing the tide."
+    {
+      "spec": {
+        "id": "cand-11",
+        "seed": 371525912,
+        "traits": {
+          "warmth": 0.5276452067308128,
+          "humor": 0.6032404535450041,
+          "looks": 0.3524760359316133,
+          "ambition": 0.36593734681373463,
+          "emotional availability": 0.8199466711189598,
+          "stability": 0.5698364447336643,
+          "curiosity": 0.6182242134120315,
+          "chemistry": 0.8944831858458928
         },
-        {
-          "setting": "a wobbly cafe table he fixes",
-          "vignette": "He levels the table with a folded receipt and zero ceremony, then takes your hand across it, and your pulse embarrasses you. He tells you, unprompted and unafraid, that his last relationship ended because he stopped saying hard things out loud, and that he has decided to be worse at silence now. You ask if he'd ever want to run his own outfit — his own anything; he says he had that once, sold it, and likes Mondays better now, and offers nothing else for the shelf where ambition goes."
-        },
-        {
-          "setting": "his stairwell, then his kitchen",
-          "vignette": "Kissing him rewires the evening; whatever this is, your body voted before you got a say. After, over tea, he tells you he wants something real and names the day — says he's too old to audition people, and you should know where he stands by Thursday. On the nightstand there's a paperback and a harmonica and no laptop anywhere, and you lie awake interrogating your own scoreboard about why that bothers you."
+        "strengths": [
+          "chemistry",
+          "emotional availability"
+        ],
+        "weaknesses": [
+          "ambition",
+          "looks"
+        ],
+        "connectionAxis": "emotional availability",
+        "flawAxis": "ambition",
+        "percentiles": {
+          "v1 fixed weights": 37
         }
-      ],
-      "flawSummary": "Ambition deliberately sold off: the absence reads as peace up close and as settling from the scoreboard.",
-      "connectionSummary": "Touch that overrides the paper score, plus undefended openness. This is the card that tests stated versus revealed preferences."
+      },
+      "persona": {
+        "name": "Ben",
+        "age": 39,
+        "bio": "Bike-tour guide, occasional carpenter, oldest guy at the climbing gym. The photos are accurate; I'm told that's a choice.",
+        "dates": [
+          {
+            "setting": "coffee, then nowhere in particular",
+            "vignette": "You almost don't show — the photos undersell exactly nothing, and he is precisely that guy, in a jacket from two decades ago. Then he touches your shoulder to steer you out of a cyclist's path, and your whole arm reports it like news. He asks how your day actually was, then asks the follow-up, and the follow-up to that; when the conversation reaches his work, he shrugs that the tours are seasonal and that's the whole plan, comfortable as a man describing the tide."
+          },
+          {
+            "setting": "a wobbly cafe table he fixes",
+            "vignette": "He levels the table with a folded receipt and zero ceremony, then takes your hand across it, and your pulse embarrasses you. He tells you, unprompted and unafraid, that his last relationship ended because he stopped saying hard things out loud, and that he has decided to be worse at silence now. You ask if he'd ever want to run his own outfit — his own anything; he says he had that once, sold it, and likes Mondays better now, and offers nothing else for the shelf where ambition goes."
+          },
+          {
+            "setting": "his stairwell, then his kitchen",
+            "vignette": "Kissing him rewires the evening; whatever this is, your body voted before you got a say. After, over tea, he tells you he wants something real and names the day — says he's too old to audition people, and you should know where he stands by Thursday. On the nightstand there's a paperback and a harmonica and no laptop anywhere, and you lie awake interrogating your own scoreboard about why that bothers you."
+          }
+        ],
+        "flawSummary": "Ambition deliberately sold off: the absence reads as peace up close and as settling from the scoreboard.",
+        "connectionSummary": "Touch that overrides the paper score, plus undefended openness. This is the card that tests stated versus revealed preferences."
+      }
     },
-    "1737363628": {
-      "name": "Rafael",
-      "age": 32,
-      "bio": "I fix the thing that made you late this morning — signals; the G is next; I'm sorry. Niece-approved uncle, league bowler, early riser.",
-      "dates": [
-        {
-          "setting": "a diner, with a map",
-          "vignette": "He brings a map, which should be a red flag and is instead the best first date you've had all year — he traces the river crossing he's spent four years fighting to fund and says 'eighty thousand people a day, forever,' the way other men say someone's name. He notices you flagging at eleven and has you in a cab with a bottle of water before you've finished the yawn. The goodbye hug is warm and total and lands nowhere at all."
+    {
+      "spec": {
+        "id": "cand-12",
+        "seed": 1737363628,
+        "traits": {
+          "warmth": 0.8018586057820357,
+          "humor": 0.6975829700008034,
+          "looks": 0.5104730118066072,
+          "ambition": 0.7833592840796337,
+          "emotional availability": 0.5603917823638767,
+          "stability": 0.5149193318095058,
+          "curiosity": 0.4165346555411816,
+          "chemistry": 0.44803924624575303
         },
-        {
-          "setting": "a platform he helped rebuild",
-          "vignette": "He remembers your coffee order, your deadline, and your dad's surgery date, and asks after all three, in order. A station agent recognizes him — 'this is the signal guy!' — and watching him go shy about it is genuinely lovely. You kiss him before your train to see if the first time was a fluke; the train comes; you're relieved, and you hate that you're relieved."
-        },
-        {
-          "setting": "his cousin's birthday party",
-          "vignette": "He's the uncle every kid orbits, and he keeps a hand on your back all night, introducing you like a decision already made. On the walk home he says he can see it — the whole life, holidays and load-bearing routines — and the terrible thing is that you can see it too, clear as one of his maps. It's just that when he pulls you in under the scaffolding, your body files it under warmth, and not under want."
+        "strengths": [
+          "ambition",
+          "warmth"
+        ],
+        "weaknesses": [
+          "chemistry",
+          "curiosity"
+        ],
+        "connectionAxis": "ambition",
+        "flawAxis": "chemistry",
+        "percentiles": {
+          "v1 fixed weights": 13
         }
-      ],
-      "flawSummary": "The spark never argues its case: every kiss lands as fondness. The body abstains while the resume votes yes.",
-      "connectionSummary": "Civic ambition plus logistical devotion — 'eighty thousand people a day, forever' is the line that makes him hard to dismiss."
+      },
+      "persona": {
+        "name": "Rafael",
+        "age": 32,
+        "bio": "I fix the thing that made you late this morning — signals; the G is next; I'm sorry. Niece-approved uncle, league bowler, early riser.",
+        "dates": [
+          {
+            "setting": "a diner, with a map",
+            "vignette": "He brings a map, which should be a red flag and is instead the best first date you've had all year — he traces the river crossing he's spent four years fighting to fund and says 'eighty thousand people a day, forever,' the way other men say someone's name. He notices you flagging at eleven and has you in a cab with a bottle of water before you've finished the yawn. The goodbye hug is warm and total and lands nowhere at all."
+          },
+          {
+            "setting": "a platform he helped rebuild",
+            "vignette": "He remembers your coffee order, your deadline, and your dad's surgery date, and asks after all three, in order. A station agent recognizes him — 'this is the signal guy!' — and watching him go shy about it is genuinely lovely. You kiss him before your train to see if the first time was a fluke; the train comes; you're relieved, and you hate that you're relieved."
+          },
+          {
+            "setting": "his cousin's birthday party",
+            "vignette": "He's the uncle every kid orbits, and he keeps a hand on your back all night, introducing you like a decision already made. On the walk home he says he can see it — the whole life, holidays and load-bearing routines — and the terrible thing is that you can see it too, clear as one of his maps. It's just that when he pulls you in under the scaffolding, your body files it under warmth, and not under want."
+          }
+        ],
+        "flawSummary": "The spark never argues its case: every kiss lands as fondness. The body abstains while the resume votes yes.",
+        "connectionSummary": "Civic ambition plus logistical devotion — 'eighty thousand people a day, forever' is the line that makes him hard to dismiss."
+      }
     }
-  }
+  ]
 }
