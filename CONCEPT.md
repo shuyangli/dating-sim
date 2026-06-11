@@ -193,9 +193,18 @@ Example vignette (three lines of lived moment, not stats):
 - **Where are they now:** rejected candidates re-enter the simulation and pair
   off — *"Daniel met someone four months later."* The visitor watches their own
   pool drain.
-- **Stated vs. revealed preferences:** three intake questions before play ("what
-  matters most to you?") set this up. Then: *"You said kindness mattered most.
-  You rejected the two kindest men in your pool in under 8 seconds each."*
+- **Stated vs. revealed preferences:** the intake asks one stated question
+  ("rank what matters most to you"), then runs a short this-or-that warm-up of
+  engineered dilemmas — authored contrast pairs that isolate one trade-off
+  ("gorgeous but cold" vs "plain but devoted"). A Bradley-Terry model infers
+  the visitor's behavioral weights from their picks (prototyped in
+  `src/inference.ts`; evaluation in `samples/inference-eval.md`: ~10 dilemmas
+  recover taste well enough to rank the deck, and in-game accept/rejects keep
+  refining it). The reveal then has two registers: **receipts** — verbatim
+  behavioral facts ("we showed you devoted-but-plain twice; you picked
+  gorgeous both times") — and **directional inference** ("you consistently
+  traded warmth away"), with the stated-vs-revealed gap as the most personal
+  moment: *"You said kindness mattered most."*
 - **Your revealed algorithm:** only now do numbers appear — *"You were running a
   p93 stopping rule"* — mapped onto the population outcomes from the diptych.
 

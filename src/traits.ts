@@ -54,7 +54,7 @@ export const PREFERENCE_PROFILES: Record<string, TraitVector> = {
 // Every candidate is strong somewhere and weak somewhere — Pareto-frontier
 // bundles only. The agony of choosing is trading apples for oranges; a
 // candidate who dominates another would let the visitor escape that agony.
-function sampleVector(rng: Rng): {
+export function sampleVector(rng: Rng): {
   traits: TraitVector;
   strengths: TraitAxis[];
   weaknesses: TraitAxis[];

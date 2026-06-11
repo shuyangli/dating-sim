@@ -6,7 +6,8 @@
   "scripts": {
     "generate": "tsx src/generate.ts",
     "typecheck": "tsc --noEmit",
-    "render": "tsx src/render.ts"
+    "render": "tsx src/render.ts",
+    "eval-inference": "tsx src/evaluate-inference.ts"
   },
   "repository": {
     "type": "git",
