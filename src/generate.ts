@@ -3,16 +3,12 @@ import path from "node:path";
 import Anthropic from "@anthropic-ai/sdk";
 import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
 import { sampleCandidates, CandidateSpec } from "./traits.js";
-import { PersonaSchema, Persona, SYSTEM_PROMPT, buildUserPrompt } from "./prompt.js";
+import { PersonaSchema, SYSTEM_PROMPT, buildUserPrompt } from "./prompt.js";
+import { GeneratedCandidate, renderMarkdown } from "./markdown.js";
 
 const MODEL = "claude-opus-4-8";
 const OUT_DIR = "out";
 const CONCURRENCY = 3;
-
-interface GeneratedCandidate {
-  spec: CandidateSpec;
-  persona: Persona;
-}
 
 function parseArgs() {
   const args = process.argv.slice(2);
@@ -44,29 +40,6 @@ async function generateOne(
     throw new Error(`No parsed output for ${spec.id} (stop: ${response.stop_reason})`);
   }
   return { spec, persona };
-}
-
-function renderMarkdown(candidates: GeneratedCandidate[]): string {
-  const parts: string[] = [
-    "# Settling — generated candidates\n",
-    "_Vignette quality review. The trait numbers below are the hidden layer; the visitor only ever sees the prose._\n",
-  ];
-  for (const { spec, persona } of candidates) {
-    parts.push(`---\n\n## ${persona.name}, ${persona.age} — ${spec.id}`);
-    parts.push(`> ${persona.bio}\n`);
-    persona.dates.forEach((d, i) => {
-      parts.push(`**Date ${i + 1} — ${d.setting}**\n\n${d.vignette}\n`);
-    });
-    parts.push(
-      `<details><summary>Hidden layer</summary>\n\n` +
-        `- percentile: **p${spec.percentile}** (score ${spec.score.toFixed(3)})\n` +
-        `- strengths: ${spec.strengths.join(", ")} · weaknesses: ${spec.weaknesses.join(", ")}\n` +
-        `- flaw axis: ${spec.flawAxis} — ${persona.flawSummary}\n` +
-        `- connection axis: ${spec.connectionAxis} — ${persona.connectionSummary}\n` +
-        `- seed: ${spec.seed}\n\n</details>\n`
-    );
-  }
-  return parts.join("\n");
 }
 
 async function main() {
