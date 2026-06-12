@@ -68,7 +68,6 @@ button {
   transition: border-color 0.15s, color 0.15s;
 }
 button:hover { border-color: var(--accent); color: var(--accent); }
-button.primary { border-color: var(--accent); }
 
 .row { display: flex; gap: 0.8rem; margin-top: 1.6rem; flex-wrap: wrap; }
 

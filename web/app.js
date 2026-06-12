@@ -109,7 +109,7 @@
   ];
   let phantomIdx = 0;
   function phantom() {
-    showToast("♥ " + PHANTOMS[phantomIdx++ % PHANTOMS.length], 3800);
+    showToast("♥︎ " + PHANTOMS[phantomIdx++ % PHANTOMS.length], 3800);
   }
 
   function render(html) {
@@ -138,7 +138,7 @@
       <p class="dim" style="margin-top:1rem">About choice, commitment, and the mathematics of loneliness.</p>
       <p style="margin-top:2.2rem">You are ${START_AGE}. You just moved to the city.<br/>
       Everyone says the hard part is over.</p>
-      <div class="row"><button id="begin" class="primary">Begin</button></div>
+      <div class="row"><button id="begin">Begin</button></div>
       <p class="dim small" style="margin-top:3rem">Five minutes. No account. It only remembers you until you close the tab.</p>
     `);
     on("begin", showStated);
@@ -199,7 +199,7 @@
       <div class="kicker">The app</div>
       <p>You make a profile. It does well.</p>
       <p class="dim">Each pass costs a month. So does each match — coffee, scheduling, the small talk. Time is the only thing the app doesn't show you.</p>
-      <div class="row"><button id="go" class="primary">Open it</button></div>
+      <div class="row"><button id="go">Open it</button></div>
     `);
     on("go", showSwipe);
   }
@@ -217,7 +217,7 @@
       </div>
       <div class="row">
         <button id="pass">✕ &nbsp;Pass</button>
-        <button id="like" class="primary">♥ &nbsp;Match</button>
+        <button id="like">♥&#xFE0E; &nbsp;Match</button>
       </div>
     `);
     const decide = (swipe) => {
@@ -245,7 +245,7 @@
       <div class="kicker">The dates</div>
       <p>${S.dateQueue.length} matched back. You start meeting them, one at a time, in the order the app decided.</p>
       <p class="dim">Three good dates is something. Most people don't get to three.</p>
-      <div class="row"><button id="go" class="primary">First date</button></div>
+      <div class="row"><button id="go">First date</button></div>
     `);
     on("go", () => {
       S.dateQueueIndex = 0;
@@ -272,7 +272,7 @@
       <div class="vignette">${d.vignette}</div>
       <div class="row">
         <button id="leave">Keep looking</button>
-        <button id="stay" class="primary">${last ? "Stay. Build something." : "See him again"}</button>
+        <button id="stay">${last ? "Stay. Build something." : "See him again"}</button>
       </div>
     `);
     phantom();
