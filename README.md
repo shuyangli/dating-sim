@@ -35,3 +35,19 @@ vignettes land — that file is the quality gate for the whole Mirror movement.
 - `src/prompt.ts` — the vignette-writer system prompt (the artistic core) and
   the structured output schema
 - `src/generate.ts` — CLI: batch generation, caching, markdown render
+
+## The playable v1 (`web/`)
+
+A fully static build of the Mirror — no backend, no accounts, nothing leaves
+the page. Stated question → eight authored dilemmas → swipe the twelve-man
+deck → date vignettes → the reveal (receipts, taste inferred in-browser via
+the Bradley-Terry port, and the deck re-scored by the player's own revealed
+weights).
+
+```sh
+npm run build-web        # regenerate web/data.js from the fixtures
+npx http-server web      # or just open web/index.html
+```
+
+Deploys to GitHub Pages via `.github/workflows/pages.yml` on pushes that touch
+`web/`.

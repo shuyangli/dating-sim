@@ -1,0 +1,46 @@
+{
+  "note": "Intake dilemmas for the web v1 — authored contrast pairs on the v1 8-axis schema, each isolating one trade-off. Trait vectors follow the dilemma convention: 0.6 base, 0.95 on the favored axis, 0.25 on the sacrificed one.",
+  "question": "Two profiles. One message. Who gets it?",
+  "dilemmas": [
+    {
+      "axes": ["looks", "warmth"],
+      "a": { "axis": "looks", "line": "Honestly unfair jawline. Replied 'haha nice' to your best story." },
+      "b": { "axis": "warmth", "line": "Wouldn't stop you on the street. Asked a follow-up question about your mother." }
+    },
+    {
+      "axes": ["chemistry", "stability"],
+      "a": { "axis": "chemistry", "line": "The kiss outside the bar rearranged your week. He's between things right now — jobs, apartments, phones." },
+      "b": { "axis": "stability", "line": "Same job nine years, plants alive, sheets ironed. The goodnight hug was like signing for a package." }
+    },
+    {
+      "axes": ["humor", "ambition"],
+      "a": { "axis": "humor", "line": "Made you cry laughing in a hardware store. No five-year plan; barely a five-day one." },
+      "b": { "axis": "ambition", "line": "Opening his second restaurant. You watched him talk for an hour and took notes. You didn't laugh once." }
+    },
+    {
+      "axes": ["emotional availability", "looks"],
+      "a": { "axis": "emotional availability", "line": "Tells you what he's feeling before you ask, in complete sentences. The photos are accurate, unfortunately." },
+      "b": { "axis": "looks", "line": "The most beautiful man who has ever ignored a direct question about his weekend." }
+    },
+    {
+      "axes": ["warmth", "ambition"],
+      "a": { "axis": "warmth", "line": "Brought soup when you posted about a cold. Content forever, exactly where he is." },
+      "b": { "axis": "ambition", "line": "Building something enormous. Remembered your name because it was on the calendar invite." }
+    },
+    {
+      "axes": ["stability", "curiosity"],
+      "a": { "axis": "stability", "line": "His routine could set clocks. His idea of an adventure is a new bench at the same park." },
+      "b": { "axis": "curiosity", "line": "Speaks four half-languages, knows the city's secret museums, has moved nine times in six years." }
+    },
+    {
+      "axes": ["chemistry", "emotional availability"],
+      "a": { "axis": "chemistry", "line": "Your hands find each other without asking. He goes quiet for days and won't say why." },
+      "b": { "axis": "emotional availability", "line": "Names the feeling, holds the conversation, stays. Kissing him is like hearing applause from another room." }
+    },
+    {
+      "axes": ["humor", "curiosity"],
+      "a": { "axis": "humor", "line": "The funniest man you've met. Orders the same thing everywhere and likes it." },
+      "b": { "axis": "curiosity", "line": "Asks the question underneath your question. Laughs at your jokes a beat late, sincerely." }
+    }
+  ]
+}
